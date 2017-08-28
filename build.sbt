@@ -10,3 +10,10 @@ scalacOptions ++= Seq(
   "-feature",
   "-target:jvm-1.8"
 )
+
+val http4sVersion = "0.15.16a"
+
+libraryDependencies ++= Seq(
+  "org.http4s" %% "http4s-blaze-server" % http4sVersion,
+  "org.http4s" %% "http4s-dsl"          % http4sVersion
+)
