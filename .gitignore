@@ -4,3 +4,16 @@
 
 *.class
 *.log
+
+# IntelliJ
+*.iml
+*.ipr
+*.iws
+.idea
+/.idea/
+
+#build files
+BUILD_DATE
+build/
+.gradle
+target/
