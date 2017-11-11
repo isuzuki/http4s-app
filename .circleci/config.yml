@@ -1,0 +1,21 @@
+version 2:
+jobs:
+  build:
+    docker:
+      - image: circleci/openjdk:8-jdk
+    steps:
+      - checkout
+      - restore_cache:
+          name: restore cache sbt
+          keys:
+            - sbt-{{ checksum "project/build.properties" }}-{{ checksum "build.sbt" }}
+      - run:
+          name: test
+          command: sbt test
+      - save_cache:
+          name: save cache sbt
+          key: sbt-{{ checksum "project/build.properties" }}-{{ checksum "build.sbt" }}
+          paths:
+            - ~/.sbt
+            - ~/.ivy2
+      - run: echo "hello world"
