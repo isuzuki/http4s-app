@@ -1,19 +1,22 @@
-/logs
-
-### https://raw.github.com/github/gitignore/8edb8a95c4c4b3dce71a378aaaf89275510b9cef/scala.gitignore
+### https://raw.github.com/github/gitignore/b3ae3810f8b0f97f24cd61c2d3dd1b5089b91801/Scala.gitignore
 
 *.class
 *.log
 
-# IntelliJ
-*.iml
-*.ipr
-*.iws
-.idea
-/.idea/
 
-#build files
-BUILD_DATE
-build/
-.gradle
+### https://raw.github.com/github/gitignore/b3ae3810f8b0f97f24cd61c2d3dd1b5089b91801/Global/SBT.gitignore
+
+# Simple Build Tool
+# http://www.scala-sbt.org/release/docs/Getting-Started/Directories.html#configuring-version-control
+
+dist/*
 target/
+lib_managed/
+src_managed/
+project/boot/
+project/plugins/project/
+.history
+.cache
+.lib/
+
+
