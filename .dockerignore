@@ -1,0 +1,11 @@
+.dockerignore
+.gitignore
+
+.git/
+.idea/
+
+project/
+src/
+target/
+
+!target/scala-2.12/*.jar
