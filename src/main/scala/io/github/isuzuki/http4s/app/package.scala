@@ -1,4 +1,4 @@
-package com.isuzuki.http4s
+package io.github.isuzuki.http4s
 
 import org.slf4j.{Logger, LoggerFactory}
 

@@ -1,4 +1,4 @@
-package com.isuzuki.http4s.app
+package io.github.isuzuki.http4s.app
 
 import java.util.concurrent.{ExecutorService, Executors}
 
@@ -15,6 +15,7 @@ object AppRouter {
   val service = HttpService {
     case GET -> Root / "hello" =>
       Ok("Hello World")
+
     case req @ GET -> Root / "logger" =>
       val ua = req.headers.get(`User-Agent`).map(_.value)
       appLogger.info(ua.getOrElse(""))

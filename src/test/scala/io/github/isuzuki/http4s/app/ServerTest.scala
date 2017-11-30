@@ -1,10 +1,10 @@
-package com.isuzuki.http4s.app
+package io.github.isuzuki.http4s.app
 
 import org.http4s.{Method, Request}
 import org.http4s.dsl._
 import org.scalatest.{Matchers, WordSpec}
 
-class AppRouterTest extends WordSpec with Matchers {
+class ServerTest extends WordSpec with Matchers {
   "AppRouter" can {
     "acccess hello path" should {
       "return response status code 200" in {
